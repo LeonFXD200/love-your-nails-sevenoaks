@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Italianno&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
@@ -19,8 +19,12 @@
 
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Love Your Nails home">
-        <span class="brand-mark" aria-hidden="true">LYN</span>
-        <span class="brand-copy">Love Your Nails<small>Sevenoaks</small></span>
+        <svg class="brand-logo" viewBox="0 0 610 110" aria-hidden="true" focusable="false">
+          <text class="logo-word" x="4" y="84">Love</text>
+          <path class="logo-heart" d="M315 100C302 82 270 56 270 31C270 10 293 2 307 18L315 28L323 18C337 2 360 10 360 31C360 56 328 82 315 100Z" />
+          <text class="logo-your" x="278" y="60">your</text>
+          <text class="logo-word" x="370" y="84">Nails</text>
+        </svg>
       </a>
       <nav aria-label="Main navigation">
         <a href="#treatments">Treatments</a>
@@ -34,27 +38,24 @@
 
     <main id="main">
       <section class="hero" id="top">
-        <figure class="hero-visual hero-shopfront-visual">
-          <img src="assets/shopfront-concept.png" alt="Love Your Nails shopfront on London Road with its black, cream and red sign" width="1536" height="1024" />
-          <figcaption><strong>Love Your Nails</strong><span>London Road, Sevenoaks · Concept exterior image</span></figcaption>
-        </figure>
         <div class="hero-copy">
-          <div class="hero-title">
-            <p class="eyebrow"><span></span> Your local nail bar on London Road</p>
-            <h1>Nails worth<br /><em>showing off.</em></h1>
+          <p class="eyebrow"><span></span> Your local nail bar on London Road</p>
+          <h1>Nails worth<br /><em>showing off.</em></h1>
+          <p class="hero-intro">From a quick colour refresh to a full set with personality, find your next look and request a seat in a few taps.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#book">Find an appointment <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="tel:+441732465442">Call 01732 465442</a>
           </div>
-          <div class="hero-support">
-            <p class="hero-intro">From a quick colour refresh to a full set with personality, find your next look and request a seat in a few taps.</p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#book">Find an appointment <span aria-hidden="true">↗</span></a>
-              <a class="text-link" href="tel:+441732465442">Call 01732 465442</a>
-            </div>
-            <div class="hero-meta" aria-label="Salon details">
-              <div><strong>Open today</strong><span id="today-hours">Checking hours…</span></div>
-              <div><strong>Sevenoaks</strong><span>London Road · TN13 1AH</span></div>
-            </div>
+          <div class="hero-meta" aria-label="Salon details">
+            <div><strong>Open today</strong><span id="today-hours">Checking hours…</span></div>
+            <div><strong>Sevenoaks</strong><span>London Road · TN13 1AH</span></div>
           </div>
         </div>
+        <figure class="hero-visual">
+          <img src="assets/hero-manicure-v3.png" alt="Close-up nude and oxblood manicure on natural hands" width="1152" height="1440" />
+          <div class="hero-stamp" aria-hidden="true"><span>Fresh colour</span><b>+</b><span>Clean finish</span></div>
+          <figcaption class="image-note">Editorial concept image</figcaption>
+        </figure>
       </section>
 
       <section class="ticker" aria-label="Popular services">
@@ -86,8 +87,8 @@
             <span class="duration">Approx. 60 min</span>
           </article>
           <article class="treatment-card image-card">
-            <img src="assets/hero-manicure-v3.png" alt="Close-up nude and oxblood manicure on natural hands" width="1152" height="1440" loading="lazy" />
-            <span>Fresh colour · clean finish</span>
+            <img src="assets/polish-edit.png" alt="Red, nude and black nail polish shades" width="1536" height="1024" loading="lazy" />
+            <span>Find your shade</span>
           </article>
           <article class="treatment-card dark-card">
             <span class="card-number">03</span>
